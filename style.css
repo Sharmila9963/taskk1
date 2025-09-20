@@ -1,0 +1,91 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f7f5f2;
+  margin: 0;
+  padding: 20px;
+}
+
+.recipe-card {
+  max-width: 600px;
+  margin: auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+h1 {
+  text-align: center;
+  color: #673ab7;
+}
+
+.info p {
+  font-size: 1rem;
+  color: #555;
+}
+
+button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: #673ab7;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #512da8;
+}
+
+.hidden {
+  display: none;
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.step {
+  display: none;
+  margin: 10px 0;
+  background: #eee;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.step.active {
+  display: block;
+  background: #d1c4e9;
+}
+
+.timer {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 1.2rem;
+  color: #e91e63;
+}
+
+@media (max-width: 600px) {
+  .recipe-card {
+    padding: 15px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
